@@ -8,14 +8,22 @@
 
 #import "CandyTableViewController.h"
 #import "CSCandy.h"
+#import "CSSearchBarTableViewController.h"
 
 @interface CandyTableViewController ()
+- (IBAction)onClick:(id)sender;
 
 @end
 
 @implementation CandyTableViewController
 
 @synthesize candySearchBar;
+
+- (void)onClick:(id)sender
+{
+  CSSearchBarTableViewController *viewController = [[CSSearchBarTableViewController alloc] init];
+  [self.navigationController pushViewController:viewController animated:YES];
+}
 
 - (void)viewDidLoad
 {
@@ -94,7 +102,5 @@
   [self filterContentForSearchText:self.searchDisplayController.searchBar.text scope:[[self.searchDisplayController.searchBar scopeButtonTitles] objectAtIndex:searchOption]];
   return YES;
 }
-
-
 
 @end

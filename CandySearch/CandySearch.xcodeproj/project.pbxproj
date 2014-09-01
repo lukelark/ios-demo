@@ -22,6 +22,7 @@
 		9AF9F99219B44CDE00C2EA43 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9AF9F99119B44CDE00C2EA43 /* Main.storyboard */; };
 		9AF9F99519B44F8300C2EA43 /* CSCandy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9F99419B44F8300C2EA43 /* CSCandy.m */; };
 		9AF9F99819B4512600C2EA43 /* CandyTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9F99719B4512600C2EA43 /* CandyTableViewController.m */; };
+		9AF9F99B19B4672400C2EA43 /* CSSearchBarTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9F99A19B4672400C2EA43 /* CSSearchBarTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		9AF9F99419B44F8300C2EA43 /* CSCandy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSCandy.m; sourceTree = "<group>"; };
 		9AF9F99619B4512600C2EA43 /* CandyTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CandyTableViewController.h; sourceTree = "<group>"; };
 		9AF9F99719B4512600C2EA43 /* CandyTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CandyTableViewController.m; sourceTree = "<group>"; };
+		9AF9F99919B4672400C2EA43 /* CSSearchBarTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CSSearchBarTableViewController.h; sourceTree = "<group>"; };
+		9AF9F99A19B4672400C2EA43 /* CSSearchBarTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CSSearchBarTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +124,8 @@
 				9AF9F99419B44F8300C2EA43 /* CSCandy.m */,
 				9AF9F99619B4512600C2EA43 /* CandyTableViewController.h */,
 				9AF9F99719B4512600C2EA43 /* CandyTableViewController.m */,
+				9AF9F99919B4672400C2EA43 /* CSSearchBarTableViewController.h */,
+				9AF9F99A19B4672400C2EA43 /* CSSearchBarTableViewController.m */,
 				9AF9F99119B44CDE00C2EA43 /* Main.storyboard */,
 				9A235A7C19B4484600B5E74B /* Images.xcassets */,
 				9A235A6B19B4484600B5E74B /* Supporting Files */,
@@ -259,6 +264,7 @@
 				9A235A7119B4484600B5E74B /* main.m in Sources */,
 				9AF9F99519B44F8300C2EA43 /* CSCandy.m in Sources */,
 				9AF9F99819B4512600C2EA43 /* CandyTableViewController.m in Sources */,
+				9AF9F99B19B4672400C2EA43 /* CSSearchBarTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
