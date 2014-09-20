@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A5DC51B19CD564800103CDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC51A19CD564800103CDF /* Foundation.framework */; };
+		9A5DC51D19CD564800103CDF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC51C19CD564800103CDF /* CoreGraphics.framework */; };
+		9A5DC51F19CD564800103CDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC51E19CD564800103CDF /* UIKit.framework */; };
+		9A5DC52119CD564800103CDF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC52019CD564800103CDF /* CoreData.framework */; };
+		9A5DC52719CD564800103CDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC52519CD564800103CDF /* InfoPlist.strings */; };
+		9A5DC52919CD564900103CDF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC52819CD564900103CDF /* main.m */; };
+		9A5DC52D19CD564900103CDF /* WDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC52C19CD564900103CDF /* WDAppDelegate.m */; };
+		9A5DC53019CD564900103CDF /* ClassicPhotos.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC52E19CD564900103CDF /* ClassicPhotos.xcdatamodeld */; };
+		9A5DC53219CD564900103CDF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC53119CD564900103CDF /* Images.xcassets */; };
+		9A5DC53919CD564900103CDF /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC53819CD564900103CDF /* XCTest.framework */; };
+		9A5DC53A19CD564900103CDF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC51A19CD564800103CDF /* Foundation.framework */; };
+		9A5DC53B19CD564900103CDF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC51E19CD564800103CDF /* UIKit.framework */; };
+		9A5DC53C19CD564900103CDF /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC52019CD564800103CDF /* CoreData.framework */; };
+		9A5DC54419CD564900103CDF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC54219CD564900103CDF /* InfoPlist.strings */; };
+		9A5DC54619CD564900103CDF /* ClassicPhotosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC54519CD564900103CDF /* ClassicPhotosTests.m */; };
+		9A5DC55019CD56A300103CDF /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A5DC54F19CD56A300103CDF /* CoreImage.framework */; };
+		9A5DC55419CD56E300103CDF /* ListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC55219CD56E300103CDF /* ListViewController.m */; };
+		9A5DC55519CD56E300103CDF /* ListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC55319CD56E300103CDF /* ListViewController.xib */; };
+		9A5DC55919CD654600103CDF /* PhotoRecord.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC55819CD654600103CDF /* PhotoRecord.m */; };
+		9A5DC55C19CD663100103CDF /* PendingOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC55B19CD663100103CDF /* PendingOperations.m */; };
+		9A5DC55F19CD6A2C00103CDF /* ImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC55E19CD6A2C00103CDF /* ImageDownloader.m */; };
+		9A5DC56219CD704000103CDF /* ImageFiltration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC56119CD704000103CDF /* ImageFiltration.m */; };
+		9A5DC59419CD794100103CDF /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58219CD794100103CDF /* AFHTTPRequestOperation.m */; };
+		9A5DC59519CD794100103CDF /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58419CD794100103CDF /* AFHTTPRequestOperationManager.m */; };
+		9A5DC59619CD794100103CDF /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58619CD794100103CDF /* AFHTTPSessionManager.m */; };
+		9A5DC59719CD794100103CDF /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58919CD794100103CDF /* AFNetworkReachabilityManager.m */; };
+		9A5DC59819CD794100103CDF /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58B19CD794100103CDF /* AFSecurityPolicy.m */; };
+		9A5DC59919CD794100103CDF /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58D19CD794100103CDF /* AFURLConnectionOperation.m */; };
+		9A5DC59A19CD794100103CDF /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC58F19CD794100103CDF /* AFURLRequestSerialization.m */; };
+		9A5DC59B19CD794100103CDF /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC59119CD794100103CDF /* AFURLResponseSerialization.m */; };
+		9A5DC59C19CD794100103CDF /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DC59319CD794100103CDF /* AFURLSessionManager.m */; };
+		9A5DC59E19CD7EDB00103CDF /* Failed.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC59D19CD7EDB00103CDF /* Failed.png */; };
+		9A5DC5A019CD7F2A00103CDF /* Placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A5DC59F19CD7F2A00103CDF /* Placeholder.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A5DC53D19CD564900103CDF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A5DC50F19CD564800103CDF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A5DC51619CD564800103CDF;
+			remoteInfo = ClassicPhotos;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A5DC51719CD564800103CDF /* ClassicPhotos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicPhotos.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5DC51A19CD564800103CDF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A5DC51C19CD564800103CDF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A5DC51E19CD564800103CDF /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9A5DC52019CD564800103CDF /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		9A5DC52419CD564800103CDF /* ClassicPhotos-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassicPhotos-Info.plist"; sourceTree = "<group>"; };
+		9A5DC52619CD564800103CDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A5DC52819CD564900103CDF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A5DC52A19CD564900103CDF /* ClassicPhotos-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ClassicPhotos-Prefix.pch"; sourceTree = "<group>"; };
+		9A5DC52B19CD564900103CDF /* WDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WDAppDelegate.h; sourceTree = "<group>"; };
+		9A5DC52C19CD564900103CDF /* WDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WDAppDelegate.m; sourceTree = "<group>"; };
+		9A5DC52F19CD564900103CDF /* ClassicPhotos.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ClassicPhotos.xcdatamodel; sourceTree = "<group>"; };
+		9A5DC53119CD564900103CDF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		9A5DC53719CD564900103CDF /* ClassicPhotosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClassicPhotosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A5DC53819CD564900103CDF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		9A5DC54119CD564900103CDF /* ClassicPhotosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClassicPhotosTests-Info.plist"; sourceTree = "<group>"; };
+		9A5DC54319CD564900103CDF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A5DC54519CD564900103CDF /* ClassicPhotosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClassicPhotosTests.m; sourceTree = "<group>"; };
+		9A5DC54F19CD56A300103CDF /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = System/Library/Frameworks/CoreImage.framework; sourceTree = SDKROOT; };
+		9A5DC55119CD56E300103CDF /* ListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListViewController.h; sourceTree = "<group>"; };
+		9A5DC55219CD56E300103CDF /* ListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListViewController.m; sourceTree = "<group>"; };
+		9A5DC55319CD56E300103CDF /* ListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListViewController.xib; sourceTree = "<group>"; };
+		9A5DC55719CD654600103CDF /* PhotoRecord.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoRecord.h; sourceTree = "<group>"; };
+		9A5DC55819CD654600103CDF /* PhotoRecord.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoRecord.m; sourceTree = "<group>"; };
+		9A5DC55A19CD663100103CDF /* PendingOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PendingOperations.h; sourceTree = "<group>"; };
+		9A5DC55B19CD663100103CDF /* PendingOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PendingOperations.m; sourceTree = "<group>"; };
+		9A5DC55D19CD6A2C00103CDF /* ImageDownloader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageDownloader.h; sourceTree = "<group>"; };
+		9A5DC55E19CD6A2C00103CDF /* ImageDownloader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageDownloader.m; sourceTree = "<group>"; };
+		9A5DC56019CD704000103CDF /* ImageFiltration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageFiltration.h; sourceTree = "<group>"; };
+		9A5DC56119CD704000103CDF /* ImageFiltration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageFiltration.m; sourceTree = "<group>"; };
+		9A5DC58119CD794100103CDF /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		9A5DC58219CD794100103CDF /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		9A5DC58319CD794100103CDF /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		9A5DC58419CD794100103CDF /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		9A5DC58519CD794100103CDF /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		9A5DC58619CD794100103CDF /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		9A5DC58719CD794100103CDF /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		9A5DC58819CD794100103CDF /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		9A5DC58919CD794100103CDF /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		9A5DC58A19CD794100103CDF /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		9A5DC58B19CD794100103CDF /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		9A5DC58C19CD794100103CDF /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		9A5DC58D19CD794100103CDF /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		9A5DC58E19CD794100103CDF /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		9A5DC58F19CD794100103CDF /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		9A5DC59019CD794100103CDF /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		9A5DC59119CD794100103CDF /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		9A5DC59219CD794100103CDF /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		9A5DC59319CD794100103CDF /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		9A5DC59D19CD7EDB00103CDF /* Failed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Failed.png; sourceTree = "<group>"; };
+		9A5DC59F19CD7F2A00103CDF /* Placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Placeholder.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A5DC51419CD564800103CDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DC55019CD56A300103CDF /* CoreImage.framework in Frameworks */,
+				9A5DC51D19CD564800103CDF /* CoreGraphics.framework in Frameworks */,
+				9A5DC52119CD564800103CDF /* CoreData.framework in Frameworks */,
+				9A5DC51F19CD564800103CDF /* UIKit.framework in Frameworks */,
+				9A5DC51B19CD564800103CDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5DC53419CD564900103CDF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DC53919CD564900103CDF /* XCTest.framework in Frameworks */,
+				9A5DC53C19CD564900103CDF /* CoreData.framework in Frameworks */,
+				9A5DC53B19CD564900103CDF /* UIKit.framework in Frameworks */,
+				9A5DC53A19CD564900103CDF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A5DC50E19CD564800103CDF = {
+			isa = PBXGroup;
+			children = (
+				9A5DC52219CD564800103CDF /* ClassicPhotos */,
+				9A5DC53F19CD564900103CDF /* ClassicPhotosTests */,
+				9A5DC51919CD564800103CDF /* Frameworks */,
+				9A5DC51819CD564800103CDF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A5DC51819CD564800103CDF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC51719CD564800103CDF /* ClassicPhotos.app */,
+				9A5DC53719CD564900103CDF /* ClassicPhotosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A5DC51919CD564800103CDF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC54F19CD56A300103CDF /* CoreImage.framework */,
+				9A5DC51A19CD564800103CDF /* Foundation.framework */,
+				9A5DC51C19CD564800103CDF /* CoreGraphics.framework */,
+				9A5DC51E19CD564800103CDF /* UIKit.framework */,
+				9A5DC52019CD564800103CDF /* CoreData.framework */,
+				9A5DC53819CD564900103CDF /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A5DC52219CD564800103CDF /* ClassicPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC58019CD794100103CDF /* AFNetworking */,
+				9A5DC52B19CD564900103CDF /* WDAppDelegate.h */,
+				9A5DC52C19CD564900103CDF /* WDAppDelegate.m */,
+				9A5DC55719CD654600103CDF /* PhotoRecord.h */,
+				9A5DC55819CD654600103CDF /* PhotoRecord.m */,
+				9A5DC55A19CD663100103CDF /* PendingOperations.h */,
+				9A5DC55B19CD663100103CDF /* PendingOperations.m */,
+				9A5DC55D19CD6A2C00103CDF /* ImageDownloader.h */,
+				9A5DC55E19CD6A2C00103CDF /* ImageDownloader.m */,
+				9A5DC56019CD704000103CDF /* ImageFiltration.h */,
+				9A5DC56119CD704000103CDF /* ImageFiltration.m */,
+				9A5DC55119CD56E300103CDF /* ListViewController.h */,
+				9A5DC55219CD56E300103CDF /* ListViewController.m */,
+				9A5DC55319CD56E300103CDF /* ListViewController.xib */,
+				9A5DC53119CD564900103CDF /* Images.xcassets */,
+				9A5DC52E19CD564900103CDF /* ClassicPhotos.xcdatamodeld */,
+				9A5DC52319CD564800103CDF /* Supporting Files */,
+			);
+			path = ClassicPhotos;
+			sourceTree = "<group>";
+		};
+		9A5DC52319CD564800103CDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC59F19CD7F2A00103CDF /* Placeholder.png */,
+				9A5DC59D19CD7EDB00103CDF /* Failed.png */,
+				9A5DC52419CD564800103CDF /* ClassicPhotos-Info.plist */,
+				9A5DC52519CD564800103CDF /* InfoPlist.strings */,
+				9A5DC52819CD564900103CDF /* main.m */,
+				9A5DC52A19CD564900103CDF /* ClassicPhotos-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A5DC53F19CD564900103CDF /* ClassicPhotosTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC54519CD564900103CDF /* ClassicPhotosTests.m */,
+				9A5DC54019CD564900103CDF /* Supporting Files */,
+			);
+			path = ClassicPhotosTests;
+			sourceTree = "<group>";
+		};
+		9A5DC54019CD564900103CDF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC54119CD564900103CDF /* ClassicPhotosTests-Info.plist */,
+				9A5DC54219CD564900103CDF /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A5DC58019CD794100103CDF /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DC58119CD794100103CDF /* AFHTTPRequestOperation.h */,
+				9A5DC58219CD794100103CDF /* AFHTTPRequestOperation.m */,
+				9A5DC58319CD794100103CDF /* AFHTTPRequestOperationManager.h */,
+				9A5DC58419CD794100103CDF /* AFHTTPRequestOperationManager.m */,
+				9A5DC58519CD794100103CDF /* AFHTTPSessionManager.h */,
+				9A5DC58619CD794100103CDF /* AFHTTPSessionManager.m */,
+				9A5DC58719CD794100103CDF /* AFNetworking.h */,
+				9A5DC58819CD794100103CDF /* AFNetworkReachabilityManager.h */,
+				9A5DC58919CD794100103CDF /* AFNetworkReachabilityManager.m */,
+				9A5DC58A19CD794100103CDF /* AFSecurityPolicy.h */,
+				9A5DC58B19CD794100103CDF /* AFSecurityPolicy.m */,
+				9A5DC58C19CD794100103CDF /* AFURLConnectionOperation.h */,
+				9A5DC58D19CD794100103CDF /* AFURLConnectionOperation.m */,
+				9A5DC58E19CD794100103CDF /* AFURLRequestSerialization.h */,
+				9A5DC58F19CD794100103CDF /* AFURLRequestSerialization.m */,
+				9A5DC59019CD794100103CDF /* AFURLResponseSerialization.h */,
+				9A5DC59119CD794100103CDF /* AFURLResponseSerialization.m */,
+				9A5DC59219CD794100103CDF /* AFURLSessionManager.h */,
+				9A5DC59319CD794100103CDF /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A5DC51619CD564800103CDF /* ClassicPhotos */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5DC54919CD564900103CDF /* Build configuration list for PBXNativeTarget "ClassicPhotos" */;
+			buildPhases = (
+				9A5DC51319CD564800103CDF /* Sources */,
+				9A5DC51419CD564800103CDF /* Frameworks */,
+				9A5DC51519CD564800103CDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ClassicPhotos;
+			productName = ClassicPhotos;
+			productReference = 9A5DC51719CD564800103CDF /* ClassicPhotos.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A5DC53619CD564900103CDF /* ClassicPhotosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A5DC54C19CD564900103CDF /* Build configuration list for PBXNativeTarget "ClassicPhotosTests" */;
+			buildPhases = (
+				9A5DC53319CD564900103CDF /* Sources */,
+				9A5DC53419CD564900103CDF /* Frameworks */,
+				9A5DC53519CD564900103CDF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A5DC53E19CD564900103CDF /* PBXTargetDependency */,
+			);
+			name = ClassicPhotosTests;
+			productName = ClassicPhotosTests;
+			productReference = 9A5DC53719CD564900103CDF /* ClassicPhotosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A5DC50F19CD564800103CDF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WD;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = wind;
+				TargetAttributes = {
+					9A5DC53619CD564900103CDF = {
+						TestTargetID = 9A5DC51619CD564800103CDF;
+					};
+				};
+			};
+			buildConfigurationList = 9A5DC51219CD564800103CDF /* Build configuration list for PBXProject "ClassicPhotos" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A5DC50E19CD564800103CDF;
+			productRefGroup = 9A5DC51819CD564800103CDF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A5DC51619CD564800103CDF /* ClassicPhotos */,
+				9A5DC53619CD564900103CDF /* ClassicPhotosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A5DC51519CD564800103CDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DC59E19CD7EDB00103CDF /* Failed.png in Resources */,
+				9A5DC5A019CD7F2A00103CDF /* Placeholder.png in Resources */,
+				9A5DC52719CD564800103CDF /* InfoPlist.strings in Resources */,
+				9A5DC53219CD564900103CDF /* Images.xcassets in Resources */,
+				9A5DC55519CD56E300103CDF /* ListViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5DC53519CD564900103CDF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DC54419CD564900103CDF /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A5DC51319CD564800103CDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DC59C19CD794100103CDF /* AFURLSessionManager.m in Sources */,
+				9A5DC59919CD794100103CDF /* AFURLConnectionOperation.m in Sources */,
+				9A5DC59419CD794100103CDF /* AFHTTPRequestOperation.m in Sources */,
+				9A5DC52919CD564900103CDF /* main.m in Sources */,
+				9A5DC59519CD794100103CDF /* AFHTTPRequestOperationManager.m in Sources */,
+				9A5DC55919CD654600103CDF /* PhotoRecord.m in Sources */,
+				9A5DC53019CD564900103CDF /* ClassicPhotos.xcdatamodeld in Sources */,
+				9A5DC59619CD794100103CDF /* AFHTTPSessionManager.m in Sources */,
+				9A5DC56219CD704000103CDF /* ImageFiltration.m in Sources */,
+				9A5DC55419CD56E300103CDF /* ListViewController.m in Sources */,
+				9A5DC52D19CD564900103CDF /* WDAppDelegate.m in Sources */,
+				9A5DC59819CD794100103CDF /* AFSecurityPolicy.m in Sources */,
+				9A5DC55F19CD6A2C00103CDF /* ImageDownloader.m in Sources */,
+				9A5DC59A19CD794100103CDF /* AFURLRequestSerialization.m in Sources */,
+				9A5DC59719CD794100103CDF /* AFNetworkReachabilityManager.m in Sources */,
+				9A5DC59B19CD794100103CDF /* AFURLResponseSerialization.m in Sources */,
+				9A5DC55C19CD663100103CDF /* PendingOperations.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A5DC53319CD564900103CDF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A5DC54619CD564900103CDF /* ClassicPhotosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A5DC53E19CD564900103CDF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A5DC51619CD564800103CDF /* ClassicPhotos */;
+			targetProxy = 9A5DC53D19CD564900103CDF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A5DC52519CD564800103CDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5DC52619CD564800103CDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9A5DC54219CD564900103CDF /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A5DC54319CD564900103CDF /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A5DC54719CD564900103CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9A5DC54819CD564900103CDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9A5DC54A19CD564900103CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassicPhotos/ClassicPhotos-Prefix.pch";
+				INFOPLIST_FILE = "ClassicPhotos/ClassicPhotos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9A5DC54B19CD564900103CDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassicPhotos/ClassicPhotos-Prefix.pch";
+				INFOPLIST_FILE = "ClassicPhotos/ClassicPhotos-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9A5DC54D19CD564900103CDF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClassicPhotos.app/ClassicPhotos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassicPhotos/ClassicPhotos-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "ClassicPhotosTests/ClassicPhotosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9A5DC54E19CD564900103CDF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/ClassicPhotos.app/ClassicPhotos";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ClassicPhotos/ClassicPhotos-Prefix.pch";
+				INFOPLIST_FILE = "ClassicPhotosTests/ClassicPhotosTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A5DC51219CD564800103CDF /* Build configuration list for PBXProject "ClassicPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5DC54719CD564900103CDF /* Debug */,
+				9A5DC54819CD564900103CDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A5DC54919CD564900103CDF /* Build configuration list for PBXNativeTarget "ClassicPhotos" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5DC54A19CD564900103CDF /* Debug */,
+				9A5DC54B19CD564900103CDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A5DC54C19CD564900103CDF /* Build configuration list for PBXNativeTarget "ClassicPhotosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A5DC54D19CD564900103CDF /* Debug */,
+				9A5DC54E19CD564900103CDF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9A5DC52E19CD564900103CDF /* ClassicPhotos.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9A5DC52F19CD564900103CDF /* ClassicPhotos.xcdatamodel */,
+			);
+			currentVersion = 9A5DC52F19CD564900103CDF /* ClassicPhotos.xcdatamodel */;
+			path = ClassicPhotos.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9A5DC50F19CD564800103CDF /* Project object */;
+}
